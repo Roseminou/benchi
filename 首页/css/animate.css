@@ -1,0 +1,112 @@
+/* 按钮样式 */
+.animate_btn {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.animate_btn span {
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 196, 0);
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 0;
+}
+
+.animate_btn .active {
+    width: 300px;
+    height: 150px;
+}
+
+.animate_btn .box{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+/* 滚动链接样式 */
+.links {
+    width: 200px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-54%);
+}
+
+.links li {
+    width: 36px;
+    height: 36px;
+    float: left;
+    position: relative;
+    margin-left: 14px;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.links li span {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.links li span:last-child {
+     transform: translateZ(18px);
+}
+
+.links li span:first-child {
+    transform: rotateX(90deg) translateZ(18px);
+}		
+
+.links li:hover {
+    transform: rotateX(-90deg);
+}
+/* 颜色 */
+.facebooklogo span:first-child {
+    color: #fff;
+    background-color: #3b5998;
+}
+.facebooklogo span:last-child {
+    color: #3b5998;
+}
+
+.rsslogo span:first-child {
+    color: #fff;
+    background-color: #f26522;
+}
+.rsslogo span:last-child {
+    color: #f26522;
+}
+
+.instagramlogo span:first-child {
+    color: #fff;
+    background-color: #833ab4;
+}
+.instagramlogo span:last-child {
+    color: #833ab4;
+}
+
+.tumblrlogo span:first-child {
+    color: #fff;
+    background-color: #35465c;
+}
+.tumblrlogo span:last-child {
+    color: #35465c;
+}

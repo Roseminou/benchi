@@ -1,0 +1,241 @@
+/* 玛莎拉蒂的世界 */
+
+.world {
+    /* width: 100%; */
+    height: 530px;
+    padding-left: 70px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.world h2 {
+    height: 110px;
+    line-height: 110px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.world .pic-list div {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 330px;
+    margin-right: 30px;
+    float: left;
+    overflow: hidden;
+}
+
+.world .pic-list div:nth-child(5) {
+    margin-right: 0;
+}
+
+.world .pic-list div p {
+    position: absolute;
+    font-size: 30px;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.world .pic {
+    position: relative;
+}
+
+.world .pic-list {
+    position: absolute;
+    width: 1600px;
+    /* width: 100%; */
+    overflow: hidden;
+    height: 330px;
+    /* left: -280px; */
+}
+
+.mo {
+    left: -280px;
+}
+
+.world .pic-list div img {
+    width: 280px;
+    height: 330px;
+}
+
+
+/* .world .pic .btnLeft {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 80px;
+    position: absolute;
+    left: 0;
+} */
+
+
+/* .world .pic .btnRight {
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    right 0;
+} */
+
+
+/* .world .cricle {
+    position: absolute;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    bottom: -14px;
+    left: 650px;
+} */
+
+
+/* .world .cricle a:hover {
+    background-color: #333;
+} */
+
+
+/* .world .cricle a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+} */
+
+
+/* 底部-上 */
+
+.footer .footer-top {
+    margin-top: 20px;
+    text-align: center;
+    height: 265px;
+    background-color: #f2f1f0;
+}
+
+.footer .footer-top .pic {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background: url('../img/b_logo.png') no-repeat;
+    margin-bottom: 20px;
+}
+
+.footer .footer-top h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.footer .footer-top h4 {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer .footer-top a {
+    font-size: 12px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0c2340;
+}
+
+
+/* 底部-下 */
+
+.footer-bot {
+    height: 285px;
+    background-color: #333333;
+    padding-top: 50px;
+}
+
+
+/* 底部-下-列表 */
+
+.footer-bot .list {
+    height: 130px;
+    width: 1120px;
+    margin-left: 70px;
+    margin-bottom: 45px;
+}
+
+.footer-bot .list ul {
+    float: left;
+    width: 480px;
+}
+
+.footer-bot .list ul:nth-child(3) {
+    width: 150px;
+}
+
+.footer-bot .list ul li {
+    margin-bottom: 7px;
+}
+
+.footer-bot .list ul li a {
+    font-size: 14px;
+}
+
+
+/* 底部-下-图片 */
+
+.footer-bot .pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-bot .pic span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.footer-bot .pic span:nth-child(3) {
+    margin-right: 0;
+}
+
+.footer-bot .pic span img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* 底部-下-文字 */
+
+.footer-bot .text {
+    text-align: center;
+}
+
+.footer-bot .text span {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.footer-bot .text span:nth-child(3) {
+    margin-right: 0;
+}
+
+
+/* 按钮 */
+
+.toTop {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #aaa;
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+}
+
+.toTop a {
+    color: black;
+}

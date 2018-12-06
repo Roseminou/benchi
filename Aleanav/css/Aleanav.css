@@ -1,0 +1,377 @@
+/* 导航整体样式 */
+
+#nav {
+    width: 100%;
+    height: 564px;
+}
+
+#nav .m {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+}
+
+.nav_a>a {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+#nav .logo {
+    text-align: center;
+    font-size: 0;
+    border-right: 1px solid #ccc;
+}
+
+.logo a img {
+    margin-top: 5px;
+}
+
+#nav .serve {
+    display: flex;
+}
+
+.serve>a {
+    text-align: center;
+    margin-left: 1px;
+    background-color: #e0e0e0;
+}
+
+.serve a:hover {
+    background-color: #d3d3d3;
+}
+
+.serve .iconfont {
+    display: block;
+    font-size: 20px;
+    margin-top: 14px;
+    color: #8e0d24;
+    font-weight: bold;
+}
+
+.serve span {
+    width: 100%;
+    font-size: 12px;
+    display: block;
+}
+
+
+/* 中间导航样式 */
+
+#nav .menu {
+    width: 100%;
+    height: 78px;
+    /* float: left; */
+    /* margin: 0 80px; */
+    position: relative;
+}
+
+.rowlist {
+    position: absolute;
+}
+
+.rowlist .row {
+    width: 270px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.rowlist .row>a {
+    width: 100%;
+    display: block;
+    line-height: 80px;
+    float: left;
+    transition: all 0.3s;
+}
+
+.rowlist .row>a.active {
+    color: #fff;
+    background-color: black;
+}
+
+.row_content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: 0 2px 4px #6b6b6b88;
+    display: none;
+}
+
+.row_content .row_box {
+    display: none;
+    width: 1366px;
+}
+
+.row_box .collist {
+    height: auto;
+    float: left;
+}
+
+.row_box .col_content {
+    width: 84%;
+    height: auto;
+    float: right;
+}
+
+.collist .col,
+.brand_li {
+    width: 210px;
+    height: 58px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.collist .col>a,
+.brand_li>a {
+    width: 195px;
+    height: 58px;
+    font-size: 12px;
+    display: block;
+    padding-left: 15px;
+    line-height: 58px;
+    transition: all 0.4s;
+}
+
+.collist .col>a.active,
+.brand_li>a.active {
+    color: #ccc;
+    background-color: #353535;
+}
+
+.col_content .nav_content {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.nav_content .car_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.car_img h3 {
+    font: 18px "微软雅黑";
+    font-weight: normal;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.car_img p {
+    font: 13px "宋体";
+    color: #8e0d24;
+    position: absolute;
+    top: 38px;
+    left: 20px;
+}
+
+.inform li {
+    width: 364px;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.inform .no_boder {
+    border: 0;
+}
+
+.inform .little {
+    font: 10px "宋体";
+}
+
+.inform li p {
+    margin-left: 14px;
+}
+
+.nav_content hr {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.nav_content .nav_botm {
+    padding-bottom: 10px;
+}
+
+.nav_botm span {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav_botm span i,
+.nav_botm span a {
+    vertical-align: middle;
+}
+
+.nav_botm span a {
+    margin-left: 10px;
+}
+
+.nav_botm span:nth-child(2) {
+    margin-left: 180px;
+}
+
+.nav_botm .icon-wodedingdan {
+    font-size: 24px;
+    color: #8e0d24;
+}
+
+
+/* 购买工具部分css样式 */
+
+.row_content .row_box.shop {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.shop li {
+    width: 31%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-right: 26px;
+    border-bottom: 1px solid #ccc;
+}
+
+.shop .no_boder {
+    border-bottom: none;
+}
+
+.shop li i {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: #8e0d24;
+    vertical-align: middle;
+}
+
+.shop li a {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    display: block;
+    transition: all 0.4s;
+}
+
+.shop li a:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* 品牌部分样式 */
+
+.brand .col,
+.brand .brand_li {
+    width: 435px;
+}
+
+.brand .col_content {
+    margin-left: 20px;
+    float: left;
+}
+
+.brand .col>a,
+.brand .brand_li>a {
+    width: 420px;
+    font-size: 14px;
+}
+
+.brand .col.no_boder {
+    border-bottom: none;
+}
+
+.brand .col_content {
+    width: auto;
+}
+
+.brand .nav_content {
+    width: 880px;
+    overflow: hidden;
+}
+
+.brand .nav_content>a {
+    display: block;
+    width: 870px;
+    height: 354px;
+    margin: 20px 0;
+}
+
+.brand_content img {
+    display: none;
+}
+
+.brandlist {
+    float: left;
+}
+
+.brand_content {
+    float: right;
+    margin-top: 30px;
+}
+
+.aleanworld .nav_content:last-child {
+    width: 1012px;
+    height: 300px;
+    background: url(../imgs/news_img/4.jpg) no-repeat;
+    position: relative;
+}
+
+.aleanworld .nav_content:last-child a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.aleanworld .nav_content:last-child span {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    left: 50px;
+    top: 30px;
+}
+
+.aleanworld .nav_content li {
+    float: left;
+}
+
+.aleanworld .world_box {
+    width: 336px;
+    margin-left: 1px;
+}
+
+.aleanworld .col {
+    width: 322px;
+}
+
+.aleanworld .col>a {
+    width: 307px;
+}
+
+.aleanworld .collist {
+    float: left;
+}
+
+.aleanworld .col_content {
+    width: auto;
+    float: right;
+}
+
+.world_box p:nth-child(2),
+.world_box a:nth-child(4) {
+    display: block;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.world_box p:nth-child(3) {
+    width: 90%;
+}

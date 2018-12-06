@@ -1,0 +1,143 @@
+/* 导航栏 */
+.top_nav {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background: #000 url('../imgs/nav_bg.jpg');
+    height: 110px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.top_nav.fixed {
+    height: 70px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .3),
+        0 0 6px 2px rgba(0, 0, 0, .15);
+}
+
+.top_nav .logo1 img {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    top: 13px;
+    left: 54px;
+}
+
+.top_nav .logo2 img {
+    position: absolute;
+    top: 15px;
+    right: 54px;
+    width: 96px;
+    height: 46px;
+}
+
+.top_nav .zoom {
+    width: 101px;
+    position: fixed;
+    left: 54px;
+    bottom: 20px;
+    z-index: 99;
+}
+
+.top_nav .zoom img {
+    width: 100%;
+}
+
+.top_nav .top_center {
+    width: 750px;
+    height: 96px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+
+.top_center ul li {
+    float: left;
+    width: 120px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.top_nav .top_center .nav_top {
+    height: 41px;
+    line-height: 41px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+/* .top_nav.fixed .nav_top.active {
+    opacity: 0;
+    pointer-events: none;
+} */
+
+.top_nav .top_center .nav_top.active {
+    height: 0px;
+    border: none;
+    transition: opacity .3s;
+    font-size: 12px;
+}
+
+.top_center .shu {
+    float: left;
+    width: 2px;
+    margin-top: 2px;
+    color: #ccc;
+}
+
+.top_center ul li a {
+    font-size: 16px;
+}
+
+.top_center ul li a:hover {
+    font-size: 18px;
+}
+
+.top_nav .bot_top {
+    text-align: right;
+    height: 40px;
+    width: 100%;
+}
+
+.top_nav .bot_top a {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    line-height: 40px;
+
+}
+
+.to-top {
+    width: 50px;
+    height: 50px;
+    background-image: url('../imgs/to_top.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #ccc;
+    background-size: 50px 50px;
+    cursor: pointer;
+    display: none;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 55px;
+    right: 0;
+}
+
+/* .btn1 {
+    width: 50px;
+    height: 50px;
+    background-image: url('../imgs/btn.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #ccc;
+    background-size: 50px 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */

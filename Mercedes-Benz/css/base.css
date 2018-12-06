@@ -1,0 +1,81 @@
+/*
+* @Author: dhl
+* @Date:   2018-08-16 15:41:24
+ * @Last Modified by: Gonghaichao
+ * @Last Modified time: 2018-10-14 12:29:44
+*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dd {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666560;
+}
+
+a {
+	text-decoration: none;
+	color: #666560;
+}
+
+a:hover {
+	color: #00adef !important;
+
+}
+
+img,
+input {
+	border: 0 none;
+	padding: 0;
+	outline-style: none;
+	/* display: block; */
+	vertical-align: top;
+}
+
+.clearfix::after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.w {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.car_all_link {
+	display: block;
+	/* height: 69px; */
+}
+
+/* .car_all_link :hover:nth-child(n){
+	color: #00adef !important;
+}  */

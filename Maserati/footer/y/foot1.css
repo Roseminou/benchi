@@ -1,0 +1,16 @@
+.foot {
+    width: 1365px;
+    background-color: aliceblue;
+    text-align: center
+}
+
+.foot-top {
+    height: 260px;
+}
+
+.foot-top .pic {
+    display: inline-block;
+    width: 60px;
+    height: 53px;
+    background: url('../img/b_logo.png') no-repeat;
+}

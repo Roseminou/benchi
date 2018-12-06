@@ -1,0 +1,417 @@
+/* .main-body {
+    position: relative;
+} */
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.nav_head {
+    width: 100%;
+    /* height: 108px; */
+    background-color: #222222;
+    position: relative;
+}
+
+.nav_head_main {
+    height: 100px;
+    position: relative;
+}
+
+.w .logo {
+    width: 259px;
+    height: 64px;
+    box-sizing: inherit;
+    margin-top: 20px;
+    vertical-align: bottom;
+    float: left;
+}
+
+.w .nav_list {
+    /* position:absolute; */
+    float: left;
+}
+
+.w .nav_list li {
+    float: left;
+    margin-left: 54px;
+    margin-top: 51px;
+}
+
+.w .nav_list li a {
+    color: #fff;
+}
+
+.w .icon-sousuo {
+    font-size: 31px;
+    position: absolute;
+    left: 100%;
+    top: 45%;
+    color: #fff;
+    /* margin-top: 69px; */
+}
+
+.w .nav_search {
+    width: 30px;
+    height: 30px;
+    /* margin-top: 69px; */
+    /* overflow: hidden; */
+}
+
+.navhead_link_all:hover:nth-child(n) {
+    color: #00adef !important;
+}
+
+.nav_head .nav_head_search_body {
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+    position: relative;
+    display: none;
+}
+
+.nav_head .nav_head_search_body .ispan {
+    width: 40px;
+    height: 36px;
+    /* border: 1px solid #fff; */
+    border-right: none;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 66%;
+    top: 20%;
+}
+
+.nav_head .nav_head_search_body>span .icon-sousuo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav_head .nav_head_search_body #search_carstyle {
+    width: 230px;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding-left: 10px;
+    color: #fff;
+    position: absolute;
+    background-color: #222222;
+    right: 200px;
+    bottom: 10px;
+}
+
+.nav_head .nav_head_search_body :nth-child(3) {
+    position: absolute;
+    right: 140px;
+    bottom: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    color: #fff;
+    background-color: #666666;
+    text-align: center;
+    line-height: 36px;
+}
+
+.nav_head .nav_head_search_body span .icon-youjiantou-copy {
+    font-size: 20px;
+}
+
+.carstyle {
+    display: none;
+}
+
+.carstyle>p {
+    margin-top: 48px;
+    font-size: 36px;
+    font-family: "SimSun", serif;
+    /* color: #575757; */
+}
+
+.carstyle>.carstyle_list>.carstyle_list_head {
+    width: 100%;
+    height: 100px;
+}
+
+.carstyle .carstyle_list .carstyle_list_head li {
+    margin-top: 34px;
+    margin-right: 56px;
+    padding-bottom: 6px;
+    /* height: 26px; */
+    float: left;
+}
+
+.carstyle .carstyle_list .carstyle_list_head li.active {
+    border-bottom: 4px solid #00adef;
+    /* border-radius: 20px; */
+}
+
+.carstyle_list_body_div {
+    width: 100%;
+    height: 800px;
+    display: none;
+}
+
+.carstyle>.carstyle_list>.carstyle_list_body_div>.carstyle_list_body>li {
+    float: left;
+}
+
+.carstyle_list_body .Sedan_number {
+    width: 168px;
+    margin-right: 50px;
+}
+
+.carstyle_list_body .Sedan_number img {
+    margin-bottom: 20px;
+    display: none;
+}
+
+.carstyle_list_body .Sedan_number span:first-child {
+    font-size: 34px;
+    font-family: "SimSun", serif;
+    margin-right: 5px;
+}
+
+.carstyle_list_body .Sedan_number li:nth-child(2) p {
+    margin-top: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: #666666;
+}
+
+.carstyle_list_body .Sedan_number li .car_all_link>p:first-child {
+    line-height: 24px;
+    /* padding-bottom: 8px; */
+    color: #333333;
+}
+
+.carstyle_list_body .Sedan_number li a p:nth-child(2) {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.carstyle_list_body .Sedan_number li {
+    margin-bottom: 36px;
+}
+
+.buycar_help {
+    display: none;
+}
+
+.buycar_help .buy_help_tle {
+    margin-top: 48px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "SimSun", serif;
+}
+
+.buycar_help .buy_help_list li {
+    float: left;
+    width: 220px;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.buycar_help .buy_help_list li:last-child {
+    margin-right: 0px;
+}
+
+.buycar_help .buy_help_list li img {
+    margin-bottom: 14px;
+}
+
+.buycar_help .buy_help_list li img.active {
+    opacity: .5;
+    box-shadow: 5px 5px orange;
+}
+
+.buycar_help .buy_help_list li p {
+    line-height: 24px;
+}
+
+.buycar_help .buy_help_list li :nth-child(2):hover {
+    color: #00adef;
+}
+
+.slider {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* margin: 20px auto; */
+}
+
+.slider_img li img {
+    height: 600px;
+}
+
+.slider>ul>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.slider>ul>li:first-child {
+    display: block;
+}
+
+.arrow {
+    display: none;
+}
+
+.slider:hover .arrow {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    left: 42%;
+    margin-left: -20px;
+    top: 90%;
+}
+
+.slider .circle ul li {
+    width: 40px;
+    height: 2px;
+    line-height: 2px;
+    text-align: center;
+    /* border-radius: 1px; */
+    border-radius: 5px;
+    float: left;
+    perspective: 800px;
+    margin-left: 7px;
+    background: url("../images/banner/backgroud.fw.png") no-repeat center;
+    background-size: 2px 2px;
+    background-color: #fff;
+    animation: animatedBackground 4s linear infinite;
+}
+
+.slider .circle ul li:nth-child(2) {
+    width: 60px;
+}
+
+.slider .circle ul li.active {
+    background-color: #00FFFF;
+    height: 4px;
+}
+
+
+/* .scroll {
+    width: 3px;
+    height: 100%;
+    position: relative;
+
+    border-radius: 2px;
+    background-color:red;
+   
+} */
+
+
+/* .scroll.active {
+    transition:  linear 2s;
+    transform: translateX(40px);
+} */
+
+.search-nav-auto--show {
+    display: block;
+    width: 240px;
+    max-height: 166px;
+    overflow: hidden;
+    border-radius: 1px;
+    position: absolute;
+    left: 822px;
+    top: 150px;
+    z-index: 9999;
+}
+
+.search-nav-auto--onmouseover {
+    line-height: 33px;
+    text-align: left;
+    color: #333;
+    border-top: none;
+    font-size: 12px;
+    background-color: rgba(212, 192, 192, 0.692);
+    width: 100%;
+    padding: 0 14px;
+    z-index: 888;
+}
+
+#mercedes-me {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.Mercedes {
+    position: relative;
+}
+
+.mercedes-me_help {
+    width: 700px;
+    position: absolute;
+    left: 354px;
+    top: 90px;
+    text-align: center;
+}
+
+.mercedes-me_help p {
+    line-height: 24px;
+    color: aqua;
+    font-size: 16px;
+    font-family: "SimSun";
+}
+
+.mercedes-me_help .btn {
+    height: 50px;
+    color: #fff;
+    margin-top: 40px;
+    background-color: #00adef;
+    cursor: pointer;
+}
+
+.section-header__hero {
+    text-align: center;
+}
+
+.section-header__video {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

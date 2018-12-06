@@ -1,0 +1,64 @@
+body,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f2f1f0;
+}
+
+input,
+img {
+    border: 0 none;
+    outline-style: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: left;
+}
+
+.celarfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.celarfix {
+    *zoom: 1;
+}

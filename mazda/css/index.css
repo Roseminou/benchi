@@ -1,0 +1,484 @@
+/* html {
+    background: black url('../imgs/nav_bg.jpg');
+} */
+
+/* 轮播图 */
+.banner {
+    margin-top: 110px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner li {
+    position: absolute;
+    display: none;
+}
+
+.banner li:first-child {
+    display: block;
+}
+
+.banner img.kv {
+    width: 1350px;
+    height: 632px;
+}
+
+.arrow {
+    display: none;
+}
+
+.banner:hover .arrow {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(104, 78, 78, 0.5);
+    position: absolute;
+    top: 50px;
+    margin-top: 220px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    left: 40px;
+    margin-top: 600px;
+}
+
+.circle p {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    float: left;
+    margin-left: 10px;
+}
+
+.circle p.active {
+    width: 11px;
+    height: 11px;
+    line-height: 11px;
+    background: orange;
+}
+
+.circle p:hover {
+    background: rgba(236, 115, 115, 0.9);
+}
+
+.banner1 {
+    height: 900px;
+    background: #272a2c;
+    position: relative;
+    border: 1px solid #272a2c;
+}
+
+.banner_top {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.banner_top p {
+    margin-top: 20px;
+}
+
+hr {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.r_banner {
+    width: 200px;
+    height: 40px;
+    background: #000;
+    text-align: center;
+    line-height: 40px;
+}
+
+.banner_center {
+    height: 520px;
+    background: #000;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_center>ul {
+    width: 1800px;
+    position: absolute;
+}
+
+.banner_center .mdzda>li {
+    float: left;
+    width: 300px;
+    height: 520px;
+}
+
+.one_banner {
+    width: 300px;
+    height: 90px;
+}
+
+.one_top h3 {
+    color: #b9b9b9;
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 90px;
+}
+
+.one_center {
+    width: 280px;
+    height: 88px;
+    background: #202020;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.one_center p:nth-child(1) {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.one_center span {
+    font-size: 30px;
+    color: #fff;
+}
+
+.one_bottom ul {
+    margin-left: 20px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.one_bottom ul li {
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+.one_foot {
+    width: 228px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.first_foot {
+    width: 158px;
+    height: 50px;
+    display: block;
+    background: #444444;
+    font-size: 14px;
+    line-height: 50px;
+    float: left;
+    padding-left: 10px;
+}
+
+.last_foot {
+    width: 60px;
+    height: 50px;
+    display: block;
+    float: right;
+    line-height: 50px;
+    text-align: center;
+    background: #696969;
+}
+
+.btn1 {
+    position: absolute;
+    left: 120px;
+    top: 50%;
+}
+
+.btn2 {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+}
+
+.carimg {
+    height: 600px;
+    background: #272a2c;
+    text-align: center;
+}
+
+.carimg p {
+    margin-top: 10px;
+}
+
+.carimg hr {
+    margin-top: 10px;
+}
+
+.car_photo {
+    margin-top: 20px;
+}
+
+.car_photo div {
+    width: 550px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.car_photo img {
+    width: 550px;
+    transition: width 1s linear;
+}
+
+.car_photo img:hover {
+    width: 600px;
+}
+
+.one_img {
+    margin-left: 50px;
+}
+
+/* 遮蔽层 */
+.zbc {
+    position: relative;
+    height: 632px;
+    background: url('../imgs/sj.jpg') no-repeat center;
+    background-size: 100%;
+}
+
+.zbc .zbc_title {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 80px;
+    z-index: 10;
+}
+
+
+
+.zbc_title p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.zbc_title p:nth-child(1) {
+    font-size: 23px;
+}
+
+.zbc_title hr {
+    width: 90px;
+    color: #ccc;
+}
+
+.zbc a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.zbc .a1 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+    cursor: pointer;
+}
+
+.zbc .a2 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    cursor: pointer;
+}
+
+.zbc a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.zbc .a3 {
+    width: 49%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.zbc .a1.active {
+    background-color: #fff;
+    color: #000;
+}
+.zbc .a2.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.zbc .a3:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    z-index: 20;
+}
+
+.zbc .a3.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    z-index: 20;
+}
+.zbc .a4.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    z-index: 20;
+}
+
+.zbc .a4 {
+    width: 49%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.zbc .a4:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    z-index: 20;
+}
+
+.zbc_r.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.fdj {
+    position: relative;
+    height: 632px;
+    background: url('../imgs/cxld_bg.jpg');
+}
+
+.fdj .fdj_tit {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.fdj_tit p:nth-child(2) {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.fdj_tit hr {
+    width: 80px;
+}
+
+.pict {
+    position: absolute;
+    top: 35%;
+    left: 108px;
+    width: 1134px;
+    height: 355px;
+    /* background-color: #fff; */
+}
+
+.pict ul li {
+    float: left;
+}
+
+.pict ul li img {
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.pict ul li.ld1 {
+    width: 50%;
+    height: 354px;
+}
+.pict ul li img:hover {
+    transform: scale(0.9);
+}
+
+
+.pict ul li.ld2,
+.pict ul li.ld3 {
+    width: 25%;
+    height: 178px;
+}
+
+.pict ul li.ld4 {
+    width: 50%;
+    height: 177px;
+}
+
+.f_box {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -299px;
+    width: 598px;
+    height: 42px;
+}
+
+.f_box li {
+    float: left;
+    margin-left: 20px;
+}
+
+.f_box li:nth-child(1){
+    margin-left: 0;
+}
+
+.f_box li a {
+    display: inline-block;
+    width: 180px;
+    height: 38px;
+    line-height: 38px;  
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.f_box li a:hover {
+    border: 1px solid #fff;
+}
+
+.foot {
+    float: left;
+    left: 0;
+    bottom: 0;
+}
